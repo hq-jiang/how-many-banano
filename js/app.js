@@ -35,7 +35,7 @@ particlesJS('particles-js',
           "nb_sides": 5
         },
         "image": {
-          "src": "https://s2.coinmarketcap.com/static/img/coins/64x64/4704.png",
+          "src": "js/banano.png",
           "width": 100,
           "height": 100
         }
