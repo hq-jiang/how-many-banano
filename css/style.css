@@ -150,6 +150,7 @@ input[type=text], select {
     border-radius: 4px;
     box-sizing: border-box;
     background-color: #adafa1;
+    font-family: 'Happy Monkey', cursive;
 }
 
 input[type=submit] {
@@ -161,9 +162,11 @@ input[type=submit] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-family: 'Happy Monkey', cursive;
 }
 
 input[type=submit]:hover {
     background-color: #EBCD01;
+    font-family: 'Happy Monkey', cursive;
 }
   
