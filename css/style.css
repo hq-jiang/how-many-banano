@@ -176,6 +176,19 @@ img {
     margin: 20px;
 }
 
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #FBDD11;
+    font-family: 'Happy Monkey', cursive;
+    color: #1A1A1E;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
 #balance {
     margin-top: 20px;
     font-size: 25px;
