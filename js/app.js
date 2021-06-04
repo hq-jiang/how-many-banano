@@ -1,3 +1,24 @@
+// const getRandomHex32 = () => {
+//     const array = new Uint32Array(32);
+//     window.crypto.getRandomValues(array);
+//     const hex = getByteArrayAsHexString(array);
+//     return hex;
+//   };
+  
+//   window.localStorage.seed = getRandomHex32();
+  
+
+// const getAccountInfo = async (ix) => {
+//     const url = 'https://kaliumapi.appditto.com/api';
+//     const account = window.bananocoinBananojs.getBananoAccount("ban_3obcrgermjde7hpjub9abbyjgspjmp7kjdcpac4kyn4fx7cb45bnqnqf3s7b");
+//     window.bananocoinBananojs.setBananodeApiUrl(url);
+//     const accountInfo = await window.bananocoinBananojs.getAccountInfo(account, true);
+//     return accountInfo;
+// }
+
+// getAccountInfo("").then((value) => console.log(value))
+
+
 /* -----------------------------------------------
 /* How to use? : Check the GitHub README
 /* ----------------------------------------------- */
@@ -11,12 +32,12 @@ particlesJS.load('particles-js', 'particles.json', function() {
 
 /* Otherwise just put the config content (json): */
 
-particlesJS('particles-js',
+particlejs = particlesJS('particles-js',
   
 {
     "particles": {
       "number": {
-        "value": 80,
+        "value": 300,
         "density": {
           "enable": false,
           "value_area": 800
@@ -62,9 +83,9 @@ particlesJS('particles-js',
       },
       "line_linked": {
         "enable": true,
-        "distance": 200,
+        "distance": 100,
         "color": "#ffffff",
-        "opacity": 0.5,
+        "opacity": 0.7,
         "width": 1
       },
       "move": {
@@ -110,7 +131,7 @@ particlesJS('particles-js',
           "speed": 3
         },
         "repulse": {
-          "distance": 200,
+          "distance": 100,
           "duration": 0.4
         },
         "push": {
@@ -125,3 +146,25 @@ particlesJS('particles-js',
   }
 
 );
+
+
+async function getBalance(public_key) {
+    const url = 'https://kaliumapi.appditto.com/api';
+    await window.bananocoinBananojs.setBananodeApiUrl(url);
+    const raw_balance = await window.bananocoinBananojs.getAccountBalanceRaw(public_key)
+    const parts = await window.bananocoinBananojs.getBananoPartsFromRaw(raw_balance);
+    return parts.banano;
+}
+
+async function displayBalance() {
+    
+    const public_key = document.getElementById("input_address").value;
+    console.log(public_key)
+    const balance = await getBalance(public_key);
+    console.log(balance)
+    document.getElementById("balance").innerHTML = balance;
+    pJSDom[0].pJS.particles.number.value = balance;
+    pJSDom[0].pJS.fn.particlesRefresh()
+}
+
+document.getElementById("submit").onclick = async () => {await displayBalance();};

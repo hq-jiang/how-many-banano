@@ -153,7 +153,7 @@ input[type=text], select {
     font-family: 'Happy Monkey', cursive;
 }
 
-input[type=submit] {
+input[type=button] {
     width: 100%;
     background-color: #FBDD11;
     color: #2A2A2E;
@@ -165,8 +165,15 @@ input[type=submit] {
     font-family: 'Happy Monkey', cursive;
 }
 
-input[type=submit]:hover {
+input[type=button]:hover {
     background-color: #EBCD01;
     font-family: 'Happy Monkey', cursive;
 }
   
+
+#balance {
+    margin-top: 20px;
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
