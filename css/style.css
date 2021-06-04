@@ -116,7 +116,7 @@ canvas{
 }
 
 .box {
-    background-color: #2A2A2E;
+    background-color: #1A1A1E;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -131,6 +131,7 @@ canvas{
     font-size: 40px;
     margin-bottom: 20px;
     text-align: center;
+    font-family: 'Happy Monkey', cursive;
 }
 
 .box p{
@@ -169,11 +170,22 @@ input[type=button]:hover {
     background-color: #EBCD01;
     font-family: 'Happy Monkey', cursive;
 }
-  
+
+
+img {
+    margin: 20px;
+}
 
 #balance {
     margin-top: 20px;
-    font-size: 30px;
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#response {
+    margin-top: 20px;
+    font-size: 20px;
     margin-bottom: 20px;
     text-align: center;
 }
