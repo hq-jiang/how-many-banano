@@ -126,6 +126,7 @@ function generateResponse (balance){
             <a href="https://bananofaucet.cc">bananofaucet.cc</a> <br>
             <a href="https://faucet.prussia.dev">faucet.prussia.dev</a> <br>
             <a href="https://bananominer.com/">bananominer.com</a> <br>
+            <a href="https://monkeytalks.cc/">monkeytalks.cc</a> <br>
             `;
             break;
         case balance < 50:
@@ -137,6 +138,7 @@ function generateResponse (balance){
             <a href="https://bananofaucet.cc">bananofaucet.cc</a> <br>
             <a href="https://faucet.prussia.dev">faucet.prussia.dev</a> <br>
             <a href="https://bananominer.com/">bananominer.com</a> <br>
+            <a href="https://monkeytalks.cc/">monkeytalks.cc</a> <br>
             `
             break;
         case balance == 69:
@@ -155,6 +157,7 @@ function generateResponse (balance){
             <a href="https://bananofaucet.cc">bananofaucet.cc</a> <br>
             <a href="https://faucet.prussia.dev">faucet.prussia.dev</a> <br>
             <a href="https://bananominer.com/">bananominer.com</a> <br>
+            <a href="https://monkeytalks.cc/">monkeytalks.cc</a> <br>
             `
             break;
         case balance < 500:
