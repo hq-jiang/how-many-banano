@@ -269,7 +269,7 @@ async function displayBalance() {
     const public_key = document.getElementById("input_address").value;
     console.log(public_key)
     let balance = await getBalance(public_key);
-    // balance = 100000;
+    // balance = 50;
     document.getElementById("balance").innerHTML = `You have ${balance} Bananos`;
     pJSDom[0].pJS.particles.number.value = calcParticles(balance);
     pJSDom[0].pJS.fn.particlesRefresh()

@@ -181,6 +181,24 @@ img {
     width: auto;
 }
 
+a:link {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #B2868E;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
 footer {
     position: absolute;
     bottom: 0;
@@ -193,6 +211,15 @@ footer {
     justify-content: center;
     flex-direction: column;
     text-align: center;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+  
+#content-wrap {
+    padding-bottom: 2.5rem;    /* Footer height */
 }
 
 
@@ -231,7 +258,6 @@ footer {
     .box {
         width: 80%;
         padding: 20px;
-        font-size: 12px;
     }
 
     img {
@@ -243,8 +269,18 @@ footer {
         margin-bottom: 20px;
     }
 
-
     .box label{
         font-size: 12px;
     }
+
+    #balance {
+        font-size: 20px;
+        margin-top: 5px;
+        margin-bottom: 5px
+    }
+
+    #response {
+        margin-top: 5px;
+        font-size: 14px;
+    }    
 }
