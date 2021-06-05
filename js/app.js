@@ -1,36 +1,3 @@
-// const getRandomHex32 = () => {
-//     const array = new Uint32Array(32);
-//     window.crypto.getRandomValues(array);
-//     const hex = getByteArrayAsHexString(array);
-//     return hex;
-//   };
-  
-//   window.localStorage.seed = getRandomHex32();
-  
-
-// const getAccountInfo = async (ix) => {
-//     const url = 'https://kaliumapi.appditto.com/api';
-//     const account = window.bananocoinBananojs.getBananoAccount("ban_3obcrgermjde7hpjub9abbyjgspjmp7kjdcpac4kyn4fx7cb45bnqnqf3s7b");
-//     window.bananocoinBananojs.setBananodeApiUrl(url);
-//     const accountInfo = await window.bananocoinBananojs.getAccountInfo(account, true);
-//     return accountInfo;
-// }
-
-// getAccountInfo("").then((value) => console.log(value))
-
-
-/* -----------------------------------------------
-/* How to use? : Check the GitHub README
-/* ----------------------------------------------- */
-
-/* To load a config file (particles.json) you need to host this demo (MAMP/WAMP/local)... */
-/*
-particlesJS.load('particles-js', 'particles.json', function() {
-  console.log('particles.js loaded - callback');
-});
-*/
-
-/* Otherwise just put the config content (json): */
 
 particlejs = particlesJS('particles-js',
   
