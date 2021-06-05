@@ -181,7 +181,7 @@ function generateResponse (balance){
             break;
         case balance < 10000:
             response = `
-            You are an <a href="https://en.wikipedia.org/wiki/Gorilla">Gorilla</a> <br>
+            You are a <a href="https://en.wikipedia.org/wiki/Gorilla">Gorilla</a> <br>
             <img src="assets/gorilla.jpg" alt="Gorilla" title="Gorilla"> <br>
             Great one, you have our respect. You have a really big ... Banano balance.
             `
@@ -237,7 +237,7 @@ async function displayBalance() {
     const public_key = document.getElementById("input_address").value;
     console.log(public_key)
     let balance = await getBalance(public_key);
-    // balance = 50;
+    // balance = 9999;
     document.getElementById("balance").innerHTML = `You have &nbsp;<span style="color: pink;">${balance}</span>&nbsp; Bananos`;
     pJSDom[0].pJS.particles.number.value = calcParticles(balance);
     pJSDom[0].pJS.fn.particlesRefresh()
