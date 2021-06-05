@@ -125,6 +125,7 @@ canvas{
     border: 2px solid #C8B00D;
     color: #FBDD11;
     border-radius: 10px;
+    width: 40%;
 }
 
 .box h1{
@@ -214,10 +215,18 @@ footer {
     footer {
         font-size: 14px;
     }
+
+    .box {
+        width: 60%;
+    }
 }
 
 @media (max-width:480px) {
     footer {
         font-size: 12px;
+    }
+
+    .box {
+        width: 70%;
     }
 }
