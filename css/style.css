@@ -231,7 +231,7 @@ footer {
     .box {
         width: 80%;
         padding: 20px;
-        font-size: 17px;
+        font-size: 12px;
     }
 
     img {
@@ -239,7 +239,7 @@ footer {
     }
 
     .box h1{
-        font-size: 30px;
+        font-size: 25px;
         margin-bottom: 20px;
     }
 
