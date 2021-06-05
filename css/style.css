@@ -157,7 +157,7 @@ input[type=text], select {
 
 input[type=button] {
     width: 100%;
-    background-color: #FBDD11;
+    background-color: #EBCD01;
     color: #2A2A2E;
     padding: 10px 20px;
     margin: 8px 0;
@@ -169,7 +169,7 @@ input[type=button] {
 }
 
 input[type=button]:hover {
-    background-color: #EBCD01;
+    background-color: #bca400;
     font-family: 'Happy Monkey', cursive;
     -webkit-appearance: none;
 }
