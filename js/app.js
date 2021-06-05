@@ -175,7 +175,7 @@ function generateResponse (balance){
             response = `
             You are an <a href="https://en.wikipedia.org/wiki/Orangutan">Orangutan</a> <br>
             <img src="assets/orangutan.jpg" alt="Orangutan" title="Orangutan"> <br>
-            Wise monkey, lead the way.
+            Wise monkey, lead the way. Tell me more on how 1 BAN = 1 BAN
             `
             break;
         case balance < 10000:
