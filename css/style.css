@@ -192,6 +192,7 @@ footer {
     text-align: center;
 }
 
+
 #balance {
     margin-top: 20px;
     font-size: 25px;
@@ -204,4 +205,19 @@ footer {
     font-size: 20px;
     margin-bottom: 20px;
     text-align: center;
+}
+
+
+
+
+@media (max-width:901px) {
+    footer {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:480px) {
+    footer {
+        font-size: 12px;
+    }
 }
