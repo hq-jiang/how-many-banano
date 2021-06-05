@@ -153,7 +153,7 @@ function generateResponse (balance){
         case balance <= 10:
             response = `
             You are a <a href="https://en.wikipedia.org/wiki/Pygmy_marmoset">pygmy marmoset</a> <br>
-            Poor monkey, you are low on Potassium. No wonder you are the smallest monkey in the world <br>
+            Poor monkey, you are low on potassium. No wonder you are the smallest monkey in the world <br>
             <img src="assets/pygmy_marmoset.jpg" alt="Pygmy marmoset" title="Pygmy marmoset"> <br>
             For free Bananos visit: <br>
             <a href="https://bananofaucet.cc">bananofaucet.cc</a> <br>
@@ -164,7 +164,7 @@ function generateResponse (balance){
         case balance < 50:
             response = `
             You are a <a href="https://en.wikipedia.org/wiki/Squirrel_monkey">squirrel monkey</a> <br>
-            Did you get lost in the jungle? <br>
+            Did you get lost in the jungle? You are slightly low on potassium<br>
             <img src="assets/squirrel_monkey.jpg" alt="Squirrel monkey" title="Squirrel monkey"> <br>
             You can still grow with free Bananos: <br>
             <a href="https://bananofaucet.cc">bananofaucet.cc</a> <br>
@@ -182,9 +182,9 @@ function generateResponse (balance){
         case balance < 100:
             response = `
             You are a <a href="https://en.wikipedia.org/wiki/Spider_monkey">spider monkey</a> <br>
-            Did you get lost in the jungle? <br>
+            You are one of the smaller monkeys, but don't get discouraged.<br>
             <img src="assets/spider_monkey.jpg" alt="Spider monkey" title="Squirrel monkey"> <br>
-            You can still grow with free Bananos: <br>
+            You can get free Bananos: <br>
             <a href="https://bananofaucet.cc">bananofaucet.cc</a> <br>
             <a href="https://faucet.prussia.dev">faucet.prussia.dev</a> <br>
             <a href="https://bananominer.com/">bananominer.com</a> <br>
@@ -270,7 +270,7 @@ async function displayBalance() {
     console.log(public_key)
     let balance = await getBalance(public_key);
     // balance = 50;
-    document.getElementById("balance").innerHTML = `You have ${balance} Bananos`;
+    document.getElementById("balance").innerHTML = `You have &nbsp;<span style="color: pink;">${balance}</span>&nbsp; Bananos`;
     pJSDom[0].pJS.particles.number.value = calcParticles(balance);
     pJSDom[0].pJS.fn.particlesRefresh()
     document.getElementById("response").innerHTML = generateResponse(balance);
