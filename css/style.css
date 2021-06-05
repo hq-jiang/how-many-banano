@@ -178,6 +178,7 @@ input[type=button]:hover {
 img {
     margin-top: 20px;
     margin-bottom: 20px;
+    width: auto;
 }
 
 footer {
@@ -229,5 +230,9 @@ footer {
 
     .box {
         width: 70%;
+    }
+
+    img {
+        width: 100%;
     }
 }
